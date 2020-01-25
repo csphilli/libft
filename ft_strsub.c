@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 12:03:35 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/03 10:32:54 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:32 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {

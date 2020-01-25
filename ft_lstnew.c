@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/03 11:12:05 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/07 10:57:33 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:24:51 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

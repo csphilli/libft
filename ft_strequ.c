@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 10:28:53 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/03 10:32:42 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:28:06 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 int		ft_strequ(const char *s1, const char *s2)
 {

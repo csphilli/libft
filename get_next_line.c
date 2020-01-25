@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 12:49:01 by cphillip          #+#    #+#             */
-/*   Updated: 2019/12/10 14:51:09 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:42 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 int		clean_line(char **fdt, char **line)
 {

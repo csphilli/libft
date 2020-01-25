@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 16:17:05 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/31 11:21:42 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:25:57 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

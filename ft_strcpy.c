@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/21 14:49:59 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/30 14:47:42 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:27:28 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {

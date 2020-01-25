@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 17:05:51 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/03 10:33:55 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:27:08 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	ft_putstr(char const *str)
 {

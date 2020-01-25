@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 13:22:40 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/02 12:28:31 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:28 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_strstr(const char *haystk, const char *needle)
 {

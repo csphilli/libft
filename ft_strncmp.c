@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:08:18 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/02 11:49:09 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:28:58 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

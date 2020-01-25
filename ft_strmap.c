@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 14:50:38 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/03 10:03:43 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:28:45 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/21 14:27:59 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/28 09:06:34 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:23:58 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

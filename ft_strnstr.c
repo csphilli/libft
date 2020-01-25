@@ -6,12 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 15:47:14 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/07 11:12:46 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:14 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdlib.h>
+#include "header/libft.h"
 
 char	*ft_strnstr(const char *hay, const char *ndl, size_t len)
 {

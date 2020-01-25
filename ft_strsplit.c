@@ -6,12 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 09:37:37 by cphillip          #+#    #+#             */
-/*   Updated: 2019/12/19 14:05:49 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:25 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "libft.h"
+#include "header/libft.h"
 
 char	**ft_strsplit(const char *s, char c)
 {

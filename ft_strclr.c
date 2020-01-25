@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 17:23:27 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/03 10:35:32 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:27:21 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	ft_strclr(char *s)
 {

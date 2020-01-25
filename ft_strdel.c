@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 16:58:36 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/24 17:14:40 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:27:33 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	ft_strdel(char **str)
 {

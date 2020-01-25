@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 15:58:26 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/02 12:27:55 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:29:09 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_strnew(size_t size)
 {

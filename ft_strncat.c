@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 12:19:21 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/01 23:32:48 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:28:55 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {

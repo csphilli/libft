@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 10:54:36 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/02 12:21:59 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:25:27 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

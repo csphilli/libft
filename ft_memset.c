@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/21 09:55:41 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/21 10:02:57 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:26:05 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

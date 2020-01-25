@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 17:49:21 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/01 21:57:50 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:25:37 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

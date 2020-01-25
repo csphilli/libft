@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 12:25:51 by cphillip          #+#    #+#             */
-/*   Updated: 2019/12/04 13:03:05 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:28:16 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

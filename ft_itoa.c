@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 12:12:48 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/02 11:53:33 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/14 11:08:15 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 char	*ft_itoa(int n)
 {

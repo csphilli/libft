@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/30 09:08:12 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/01 23:27:55 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/10 19:26:30 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "./header/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

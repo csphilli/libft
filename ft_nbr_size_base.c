@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_nbr_size_base.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/22 17:33:01 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/10 19:27:46 by cphillip         ###   ########.fr       */
+/*   Created: 2020/01/22 15:48:28 by cphillip          #+#    #+#             */
+/*   Updated: 2020/01/22 15:51:17 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./header/libft.h"
+#include "header/libft.h"
 
-
-char	*ft_strdup(const char *s1)
+int		ft_nbr_size_base(int nbr, int base)
 {
-	char	*s2;
-	int		len;
-	int		i;
+	int	len;
 
-	i = 0;
-	len = ft_strlen(s1);
-	if (!(s2 = (char *)malloc(sizeof(char) * len + 1)))
-		return (NULL);
-	while (s1[i] != '\0')
-	{
-		s2[i] = s1[i];
-		i++;
-	}
-	s2[i] = '\0';
-	return (s2);
+	len = 0;
+	len += (nbr < 0);
+	while (nbr /= base)
+		len++;
+	return (len);
 }
