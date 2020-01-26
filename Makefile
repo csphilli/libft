@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/01/25 21:15:50 by cphillip         ###   ########.fr        #
+#    Updated: 2020/01/26 20:59:51 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,7 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 	ft_putendl_fd.c ft_putnbr_fd.c ft_lword.c ft_nbr_size.c ft_nbw.c\
 	ft_strncpy.c ft_isspace.c ft_strnstr.c ft_lstnew.c\
 	ft_lstdel.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c get_next_line.c\
-	ft_lstmap.c ft_nbr_size_base.c\
-	ft_revstr.c
+	ft_lstmap.c ft_nbr_size_base.c ft_revstr.c
 
 OBJECTS = $(SRC:.c=.o)
 

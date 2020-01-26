@@ -6,13 +6,13 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 15:46:12 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/23 15:46:38 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/26 21:34:30 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header/libft.h"
 
-char	*rev_str(char *str)
+char	*ft_rev_str(char *str)
 {
 	char 	*tmp;
 	int		i;
