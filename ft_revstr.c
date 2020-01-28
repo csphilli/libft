@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 15:46:12 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/26 21:36:13 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/28 15:31:03 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_revstr(char *str)
 {
-	char 	*tmp;
+	char	*tmp;
 	int		i;
 	int		len;
 
 	i = 0;
 	len = ft_strlen(str);
-	if (!(tmp = (char *)malloc(sizeof(len * (char) + 1))))
+	if (!(tmp = (char *)malloc(sizeof(len * (char)+1))))
 		return (NULL);
 	tmp[len] = '\0';
 	while (len--)
