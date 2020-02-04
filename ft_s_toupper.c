@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 09:10:43 by cphillip          #+#    #+#             */
-/*   Updated: 2020/02/04 09:11:41 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/02/04 09:13:17 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "header/libft.h"
 
 char	*ft_s_toupper(char *str)
 {
