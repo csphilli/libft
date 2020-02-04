@@ -6,12 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:33:01 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/10 19:27:46 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/01/28 15:31:20 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./header/libft.h"
-
 
 char	*ft_strdup(const char *s1)
 {
