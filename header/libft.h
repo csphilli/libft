@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/02/04 09:14:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/02/06 13:18:13 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,6 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_nbr_size_base(int nbr, int base);
 char				*ft_revstr(char *str);
 char				*ft_s_toupper(char *str);
+char				*ft_strndup(char *str, int size);
 
 #endif
