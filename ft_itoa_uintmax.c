@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_revstr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa_uintmax.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/23 15:46:12 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/02 13:43:39 by cphillip         ###   ########.fr       */
+/*   Created: 2020/02/27 10:35:30 by cphillip          #+#    #+#             */
+/*   Updated: 2020/03/02 13:43:21 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header/libft.h"
+#include "./header/libft.h"
 
-char	*ft_revstr(char *str)
+char	*ft_itoa_uintmax(uintmax_t n)
 {
-	char	*tmp;
-	int		i;
-	int		len;
+	char			*new;
+	int				len;
 
-	i = 0;
-	len = ft_strlen(str);
-	if (!(tmp = (char *)malloc(sizeof(len * (char)+1))))
+	len = ft_intlen_max(n) + 1;
+	if (!(new = ft_strnew(len + 1)))
 		return (NULL);
-	tmp[len] = '\0';
-	while (len--)
+	new[len] = '\0';
+	len--;
+	while (n >= 10)
 	{
-		tmp[len] = str[i];
-		i++;
+		new[--len] = (char)(n % 10 + '0');
+		n /= 10;
 	}
-	return (tmp);
+	new[--len] = (char)(n + '0');
+	return (new);
 }
