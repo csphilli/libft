@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlen_max.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr_max.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/27 10:30:26 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/02 14:40:49 by cphillip         ###   ########.fr       */
+/*   Created: 2020/03/02 13:46:32 by cphillip          #+#    #+#             */
+/*   Updated: 2020/03/02 13:46:59 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./header/libft.h"
+#include "header/libft.h"
 
-int		ft_intlen_max(uintmax_t nbr)
+void	ft_putnbrmax(intmax_t nbr)
 {
-	int len;
-
-	if (nbr < 0)
-		nbr *= -1;
-	len = 1;
-	while ((nbr /= 10) > 0)
-		len++;
-	return (len);
+	if (nbr > 9)
+		ft_putnbrmax(nbr / 10);
+	ft_putchar(nbr % 10 + '0');
 }

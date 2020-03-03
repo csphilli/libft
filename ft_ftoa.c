@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 10:23:50 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/02 13:42:58 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/03/03 09:47:59 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header/libft.h"
+#include "./header/libft.h"
 
 static long double	rounding(long double nbr, int prec)
 {
@@ -26,12 +26,14 @@ static long double	rounding(long double nbr, int prec)
 	return (rounding);
 }
 
-static long double	clean_nbr(long double nbr, int prec)
+static char			*joining(char *whole, char *dec_part)
 {
-	prec = prec == -1 ? 6 : prec;
-	nbr += prec >= 0 ? rounding(nbr, prec) : 0;
-	nbr < 0 ? nbr *= -1 : nbr * 1;
-	return (nbr);
+	char *joint;
+
+	joint = ft_strjoin(whole, dec_part);
+	free(whole);
+	free(dec_part);
+	return (joint);
 }
 
 char				*ft_ftoa(long double nbr, int prec, char dot)
@@ -43,7 +45,9 @@ char				*ft_ftoa(long double nbr, int prec, char dot)
 	int					i;
 
 	i = 0;
-	nbr = clean_nbr(nbr, prec);
+	prec = prec == -1 ? 6 : prec;
+	nbr += prec >= 0 ? rounding(nbr, prec) : 0;
+	nbr < 0 ? nbr *= -1 : nbr * 1;
 	whole = ft_itoa_uintmax(nbr);
 	dec = nbr;
 	nbr = prec > 0 ? nbr - dec : 0;
@@ -56,8 +60,6 @@ char				*ft_ftoa(long double nbr, int prec, char dot)
 		nbr -= dec;
 		dec_part[i++] = dec + '0';
 	}
-	joint = ft_strjoin(whole, dec_part);
-	free(whole);
-	free(dec_part);
+	joint = joining(whole, dec_part);
 	return (joint);
 }
