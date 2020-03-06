@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/31 13:39:37 by cphillip          #+#    #+#             */
-/*   Updated: 2020/02/06 14:37:58 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/03/06 10:01:10 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,15 @@ char	*ft_s_toupper(char *str)
 	if (!(tmp = (char *)malloc(sizeof(ft_strlen(str) * (char)+1))))
 		return (NULL);
 	tmp = ft_strdup(str);
-	while (*(tmp + i))
+	while (str[i])
 	{
-		*(tmp + i) = ft_toupper(*(tmp + i));
+		if (!ft_isalpha(str[i]))
+			tmp[i] = str[i];
+		else if (ft_isalpha(str[i]))
+			tmp[i] = ft_toupper(str[i]);		
 		i++;
 	}
-	free(str);
+	i++;
+	tmp[i] = '\0';
 	return (tmp);
 }

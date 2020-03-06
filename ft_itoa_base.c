@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbr_size_base.c                                 :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/22 15:48:28 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/03 11:41:14 by cphillip         ###   ########.fr       */
+/*   Created: 2020/03/03 11:40:26 by cphillip          #+#    #+#             */
+/*   Updated: 2020/03/06 10:00:29 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header/libft.h"
+#include "./header/libft.h"
 
-int		ft_nbr_size_base(uintmax_t nbr, int base)
+char	*ft_itoa_base(uintmax_t nbr, int base)
 {
-	int	len;
-
-	len = 0;
-	len += (nbr < 0);
-	while (nbr)	
+	char	*new;
+	int		j;
+	
+	j = ft_nbr_size_base(nbr, base);
+	if (!(new = (char*)malloc(sizeof(char) * j + 1)))
+		return (NULL);
+	if (nbr < 0)
+		new[0] = '-';
+	new[j] = '\0';
+	while (j--)
 	{
+		new[j] = (nbr % base < 10) ? nbr % base + '0' : nbr % base + 'a' - 10;
 		nbr /= base;
-		len++;
 	}
-	return (len);
+	return (new);
 }
