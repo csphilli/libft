@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/03 11:42:45 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/04/09 16:53:48 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char				*ft_strnstr(const char *hay, const char *ndl, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
+intmax_t			ft_atoimax(const char *str);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
 int					ft_isalnum(int c);
@@ -82,7 +83,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-int					ft_nbr_size(unsigned int nbr);
+int					ft_nbr_size(intmax_t nbr);
 int					ft_nbw(const char *s, char c);
 int					ft_lword(const char *s, char c);
 int					get_next_line(const int fd, char **line);
@@ -95,7 +96,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_nbr_size_base(uintmax_t nbr, int base);
 char				*ft_revstr(char *str);
-char				*ft_s_toupper(char *str);
+void				ft_s_toupper(char *str);
 char				*ft_strndup(char *str, int size);
 int					ft_intlen_max(uintmax_t nbr);
 char				*ft_ftoa(long double nbr, int prec, char dot);

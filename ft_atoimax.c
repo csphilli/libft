@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_atoimax.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/03 11:40:26 by cphillip          #+#    #+#             */
-/*   Updated: 2020/06/15 13:17:46 by cphillip         ###   ########.fr       */
+/*   Created: 2019/10/20 17:33:15 by cphillip          #+#    #+#             */
+/*   Updated: 2020/06/15 13:15:39 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./header/libft.h"
 
-char	*ft_itoa_base(uintmax_t nbr, int base)
+intmax_t		ft_atoimax(const char *str)
 {
-	char	*new;
-	int		j;
+	int			i;
+	int			sign;
+	intmax_t	res;
 
-	j = ft_nbr_size_base(nbr, base);
-	if (!(new = (char*)malloc(sizeof(char) * j + 1)))
-		return (NULL);
-	if (nbr < 0)
-		new[0] = '-';
-	new[j] = '\0';
-	while (j--)
+	i = 0;
+	sign = 1;
+	res = 0;
+	while (str[i] && (ft_isspace(str[i])))
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	if (str[i] == '+' || str[i] == '-')
+		i++;
+	while (str[i] && ft_isdigit(str[i]))
 	{
-		new[j] = (nbr % base < 10) ? nbr % base + '0' : nbr % base + 'a' - 10;
-		nbr /= base;
+		res = res * 10 + (str[i] - 48);
+		i++;
 	}
-	return (new);
+	return (res * sign);
 }

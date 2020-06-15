@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:48:28 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/03 11:41:14 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/06/15 13:16:54 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		ft_nbr_size_base(uintmax_t nbr, int base)
 
 	len = 0;
 	len += (nbr < 0);
-	while (nbr)	
+	while (nbr)
 	{
 		nbr /= base;
 		len++;
