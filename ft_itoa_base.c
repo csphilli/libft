@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 11:40:26 by cphillip          #+#    #+#             */
-/*   Updated: 2020/06/15 14:28:07 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/06/18 11:59:24 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_itoa_base(uintmax_t nbr, int base)
 {
 	char	*new;
 	int		j;
-	
+
 	j = ft_nbr_size_base(nbr, base);
 	if (!(new = (char*)malloc(sizeof(char) * j + 1)))
 		return (NULL);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/04/09 16:53:48 by csphilli         ###   ########.fr       */
+/*   Updated: 2020/06/17 20:36:06 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 # define BUFF_SIZE 1000
 # define BUFF_SIZE_GNL 1000
 # define FD_SIZE 1000
+# define RED "\033[1;31m"
+# define GREEN "\033[1;32m"
+# define CYAN "\033[1;36m"
+# define YELLOW "\033[01;33m"
+# define RESET "\033[0m"
 
 # include <string.h>
 # include <stdlib.h>
