@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/06/17 20:36:06 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/06/25 09:22:00 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 # include <sys/types.h>
 # include <fcntl.h>
 # include <unistd.h>
+# include "../ft_printf/includes/ft_printf.h"
 
 typedef struct		s_list
 {
