@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/09/01 14:08:27 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/09/01 14:30:03 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,7 @@ int					ft_nbr_size_base(uintmax_t nbr, int base);
 char				*ft_revstr(char *str);
 void				*ft_s_inlower(char *str);
 void				*ft_s_inupper(char *str);
+void				ft_s_toupper(char *str);
 char				*ft_strndup(char *str, int size);
 int					ft_intlen_max(uintmax_t nbr);
 char				*ft_ftoa(long double nbr, int prec, char dot);
