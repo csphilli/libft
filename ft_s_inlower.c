@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_s_toupper.c                                     :+:      :+:    :+:   */
+/*   ft_s_inlower.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/31 13:39:37 by cphillip          #+#    #+#             */
-/*   Updated: 2020/03/07 08:53:24 by csphilli         ###   ########.fr       */
+/*   Updated: 2020/09/01 14:11:57 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header/libft.h"
 
-void	ft_s_toupper(char *str)
+void	*ft_s_inlower(char *str)
 {
+	char	*tmp;
 	int		i;
 
 	i = 0;
-	while (str[i])
+	if (!(tmp = (char*)malloc(sizeof(char) * ft_strlen(str) + 1)))
+		return (0);
+	while (*str)
 	{
-		if (!ft_isalpha(str[i]))
-			ft_putchar(str[i]);
-		else if (ft_isalpha(str[i]))
-			ft_putchar(ft_toupper(str[i]));
+		if (*str >= 'A' && *str <= 'Z')
+			tmp[i] = *str + 32;
+		else
+			tmp[i] = *str;
 		i++;
+		str++;
 	}
+	tmp[i] = '\0';
+	return (tmp);
 }
