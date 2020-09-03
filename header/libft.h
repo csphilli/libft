@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/09/01 14:30:03 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/09/03 14:21:32 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 
 # include <string.h>
 # include <stdlib.h>
+# include <stdbool.h>
 # include <sys/types.h>
 # include <fcntl.h>
 # include <unistd.h>
