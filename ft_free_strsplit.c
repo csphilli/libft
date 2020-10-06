@@ -6,26 +6,22 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 11:55:45 by cphillip          #+#    #+#             */
-/*   Updated: 2020/09/23 12:01:04 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/10/03 20:36:21 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./header/libft.h"
 
-void	ft_free_strsplit(char **str)
+void	free_strsplit(char ***array)
 {
-	int i;
-	int j;
+	char **current;
 
-	i = 0;
-	j = 0;
-	while (str[j])
+	if (array && *array)
 	{
-		i = 0;
-		while (str[j][i])
-			str[j][i++] = '\0';
-		free(str[j]);
-		j++;
+		current = ((*array));
+		while ((*current))
+			free((*(current++)));
+		free((*array));
+		(*array) = NULL;
 	}
-	free(str);
 }

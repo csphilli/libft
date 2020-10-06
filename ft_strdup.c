@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 17:33:01 by cphillip          #+#    #+#             */
-/*   Updated: 2020/01/28 15:31:20 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/09/19 17:50:05 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	len = ft_strlen(s1);
-	if (!(s2 = (char *)malloc(sizeof(char) * len + 1)))
+	if (!(s2 = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	while (s1[i] != '\0')
 	{
