@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/09/23 12:00:08 by cphillip         ###   ########.fr        #
+#    Updated: 2020/10/08 21:10:09 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ LIB_SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 			ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 			ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 			ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
-			ft_free_strsplit.c
+			ft_free_strsplit.c ft_arrcat.c ft_arrlen.c ft_init_arr.c
 
 GNL_SRC = 		get_next_line.c
 
