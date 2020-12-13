@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/07 11:14:25 by cphillip          #+#    #+#             */
-/*   Updated: 2020/11/25 09:34:50 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/13 19:20:55 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *alst;
-	*alst = new;
+	if (*alst && new)
+	{
+		new->next = *alst;
+		*alst = new;
+	}
+	else if (new)
+		*alst = new;
 }
