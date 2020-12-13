@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/13 20:49:54 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/13 20:54:55 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/13 21:10:08 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstappend(t_list **alst, t_list *new)
 	tmp = *alst;
 	if (tmp && new)
 	{
-		while (tmp)
+		while (tmp->next)
 			tmp = tmp->next;
 		tmp->next = new;
 	}
