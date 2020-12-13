@@ -3,22 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 09:44:30 by cphillip          #+#    #+#             */
-/*   Updated: 2020/06/16 21:40:09 by csphilli         ###   ########.fr       */
+/*   Updated: 2020/11/25 15:10:01 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include "../../header/libft.h"
+# include "../../libft/includes/libft.h"
 # include <ctype.h>
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
 # include <wchar.h>
+# define RED "\033[1;31m"
+# define GREEN "\033[1;32m"
+# define CYAN "\033[1;36m"
+# define YELLOW "\033[01;33m"
+# define RESET "\033[0m"
 
 typedef struct	s_struct
 {
