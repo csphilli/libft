@@ -6,13 +6,13 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/13 20:49:54 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/13 21:10:08 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/14 19:47:51 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-t_list	*ft_lstappend(t_list **alst, t_list *new)
+void	*ft_lstappend(t_list **alst, t_list *new)
 {
 	t_list *tmp;
 
