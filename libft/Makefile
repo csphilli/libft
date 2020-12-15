@@ -6,13 +6,14 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/12/13 20:55:13 by cphillip         ###   ########.fr        #
+#    Updated: 2020/12/15 21:20:10 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
 SRC = ./srcs/
+OBJ_DIR = ./obj
 FUNC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c\
 		ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c\
@@ -26,7 +27,7 @@ FUNC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_putendl_fd.c ft_putnbr_fd.c ft_lword.c ft_nbr_size.c ft_nbw.c\
 		ft_strncpy.c ft_isspace.c ft_strnstr.c ft_lstnew.c\
 		ft_lstdel.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c\
-		ft_lstmap.c ft_nbr_size_base.c ft_revstr.c ft_error.c\
+		ft_lstmap.c ft_nbr_size_base.c ft_revstr.c\
 		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 		ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
@@ -41,12 +42,15 @@ OBJECTS = $(FUNC:.c=.o)
 all: $(NAME)
 
 $(NAME):
+	@echo "Compiling Library..."
+	@mkdir -p $(OBJ_DIR)
 	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
 	@ar rc $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
+	@mv $(OBJECTS) $(OBJ_DIR)
 
 clean:
-	@rm -rf $(OBJECTS)
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -rf $(NAME)
