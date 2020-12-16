@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 17:33:15 by cphillip          #+#    #+#             */
-/*   Updated: 2020/11/25 09:34:30 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 intmax_t		ft_atoimax(const char *str)
 {

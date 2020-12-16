@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 11:40:26 by cphillip          #+#    #+#             */
-/*   Updated: 2020/11/25 09:34:42 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_itoa_base(uintmax_t nbr, int base)
 {

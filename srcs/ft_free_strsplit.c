@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 11:55:45 by cphillip          #+#    #+#             */
-/*   Updated: 2020/11/25 09:34:34 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/16 11:43:04 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	free_strsplit(char ***array)
 {

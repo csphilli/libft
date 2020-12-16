@@ -6,11 +6,11 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 17:33:15 by cphillip          #+#    #+#             */
-/*   Updated: 2020/11/25 09:33:36 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/16 11:44:07 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {

@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/15 23:16:41 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/16 12:19:01 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@
 
 typedef struct		s_list
 {
-	t_list			next;
 	void			*content;
 	size_t			content_size;
+	struct s_list	*next;
 }					t_list;
 
 void				*ft_memset(void *s, int c, size_t n);

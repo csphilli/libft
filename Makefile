@@ -6,15 +6,15 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/12/15 23:10:33 by cphillip         ###   ########.fr        #
+#    Updated: 2020/12/16 13:14:03 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ./srcs/
+SRC_DIR = ./srcs/
 OBJ_DIR = ./obj
-FUNC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
+SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c\
 		ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c\
 		ft_strstr.c ft_strcmp.c ft_strncmp.c ft_atoi.c ft_isalpha.c\
@@ -31,17 +31,19 @@ FUNC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 		ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
-		ft_free_strsplit.c ft_arrcat.c ft_arrlen.c\
-		ft_is_str_nbr.c ft_nbrstrcmp.c get_next_line.c ft_lstcontent.c\
+		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
+		get_next_line.c ft_lstcontent.c\
 		ft_lstappend.c
 
 INCLUDES = -I ./includes/
-C_FILES = $(addprefix $(SRC), $(FUNC))
-OBJECTS = $(FUNC:.c=.o)
+C_FILES = $(addprefix $(SRC_DIR), $(SRC))
+OBJECTS = $(SRC:.c=.o)
+
+TEST_FILE = main.c
 
 all: $(NAME)
 
-$(NAME): 
+$(NAME): $(C_FILES)
 	@echo "Compiling Library..."
 	@mkdir -p $(OBJ_DIR)
 	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
@@ -57,4 +59,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re test
