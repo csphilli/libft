@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/12/16 13:14:03 by cphillip         ###   ########.fr        #
+#    Updated: 2020/12/17 12:09:41 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ TEST_FILE = main.c
 all: $(NAME)
 
 $(NAME): $(C_FILES)
-	@echo "Compiling Library..."
+	@echo "Compiling library..."
 	@mkdir -p $(OBJ_DIR)
 	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
 	@ar rc $(NAME) $(OBJECTS)
