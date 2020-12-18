@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 12:19:01 by cphillip         ###   ########.fr       */
+/*   Updated: 2020/12/18 10:39:15 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstcontent(void *content);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_nbr_size_base(uintmax_t nbr, int base);
 char				*ft_revstr(char *str);
