@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2020/12/17 12:09:41 by cphillip         ###   ########.fr        #
+#    Updated: 2020/12/23 20:53:28 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,10 @@ TEST_FILE = main.c
 all: $(NAME)
 
 $(NAME): $(C_FILES)
+	@if git submodule status | egrep -q '^[-]' ; then \
+		echo "INFO: Initializing git submodules"; \
+		git submodule update --init; \
+	fi
 	@echo "Compiling library..."
 	@mkdir -p $(OBJ_DIR)
 	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
