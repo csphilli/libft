@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/01/02 15:11:26 by cphillip         ###   ########.fr        #
+#    Updated: 2021/01/02 15:18:39 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 		ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
-		get_next_line.c ft_lstcontent.c ft_errorexit.c\
+		get_next_line.c ft_lstcontent.c ft_error_exit.c\
 		ft_lstappend.c
 
 INCLUDES = -I ./includes/
