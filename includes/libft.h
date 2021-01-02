@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/02 12:36:04 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/02 12:47:04 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,5 @@ char				**ft_arrcat(char **arr, char *str);
 void				ft_init_arr(char **arr, int size);
 int					ft_nbrstrcmp(const char *s1, const char *s2);
 int					ft_is_str_num(const char *s1);
-void				ft_errorExit(char *error_msg);
+void				ft_errorexit(char *error_msg);
 #endif
