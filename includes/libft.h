@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/01 19:01:40 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/02 12:36:04 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <sys/types.h>
 # include <fcntl.h>
 # include <unistd.h>
+# include "colors.h"
 
 typedef struct		s_list
 {
