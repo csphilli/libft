@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/02 15:17:11 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/02 15:18:15 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/03 11:36:36 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_errorexit(char *error_msg)
 {
-	write(1, error_msg, ft_strlen(error_msg));
+	write(2, error_msg, ft_strlen(error_msg));
 	exit(-1);
 }
