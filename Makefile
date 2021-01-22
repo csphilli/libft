@@ -6,7 +6,7 @@
 #    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/01/15 19:53:31 by cphillip         ###   ########.fr        #
+#    Updated: 2021/01/22 22:21:53 by cphillip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,15 +25,14 @@ SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c ft_putstr.c\
 		ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c\
 		ft_putendl_fd.c ft_putnbr_fd.c ft_lword.c ft_nbr_size.c ft_nbw.c\
-		ft_strncpy.c ft_isspace.c ft_strnstr.c ft_lstnew.c\
-		ft_lstdel.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c\
-		ft_lstmap.c ft_nbr_size_base.c ft_revstr.c\
+		ft_strncpy.c ft_isspace.c ft_strnstr.c \
+		ft_lstadd.c ft_lstfuncs.c\
+		ft_nbr_size_base.c ft_revstr.c\
 		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 		ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
-		get_next_line.c ft_lstcontent.c ft_error_exit.c\
-		ft_lstappend.c ft_handle_error.c
+		get_next_line.c ft_error_exit.c ft_handle_error.c
 
 INCLUDES = -I ./includes/
 C_FILES = $(addprefix $(SRC_DIR), $(SRC))

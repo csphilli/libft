@@ -6,7 +6,7 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/15 20:10:21 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/22 22:47:06 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include "colors.h"
-
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
+# include "ll.h"
 
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
@@ -91,13 +85,6 @@ int					ft_nbw(const char *s, char c);
 int					ft_lword(const char *s, char c);
 int					get_next_line(const int fd, char **line);
 int					clean_line(char **fdt, char **line);
-t_list				*ft_lstnew(void const *content, size_t content_size);
-void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
-void				ft_lstadd(t_list **alst, t_list *new);
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list				*ft_lstcontent(void *content);
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_nbr_size_base(uintmax_t nbr, int base);
 char				*ft_revstr(char *str);
 void				*ft_s_inlower(char *str);

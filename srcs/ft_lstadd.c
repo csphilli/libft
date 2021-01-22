@@ -6,19 +6,39 @@
 /*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/07 11:14:25 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/22 22:45:58 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ll.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	unshift_node(t_list *list, void *data)
 {
-	if (*alst && new)
+	t_node *new;
+
+	new = (t_node*)malloc(sizeof(t_node));
+	new->data = data;
+	if (list->head == NULL)
 	{
-		new->next = *alst;
-		*alst = new;
+		list->tail = new;
+		new->next = NULL;
 	}
-	else if (new)
-		*alst = new;
+	else
+		new->next = list->head;
+	list->head = new;
+}
+
+void	append_node(t_list *list, void *data)
+{
+	t_node	*new;
+
+	new = (t_node*)malloc(sizeof(t_node));
+	new->data = data;
+	new->next = NULL;
+	if (!list->head)
+		list->head = new;
+	else
+		list->tail->next = new;
+	list->tail = new;
 }
