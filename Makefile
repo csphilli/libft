@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+         #
+#    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/01/22 22:21:53 by cphillip         ###   ########.fr        #
+#    Updated: 2021/01/28 07:19:43 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c\
 		ft_putendl_fd.c ft_putnbr_fd.c ft_lword.c ft_nbr_size.c ft_nbw.c\
 		ft_strncpy.c ft_isspace.c ft_strnstr.c \
-		ft_lstadd.c ft_lstfuncs.c\
+		ft_lstadd.c ft_lstfuncs.c ft_error.c\
 		ft_nbr_size_base.c ft_revstr.c\
 		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\

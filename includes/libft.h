@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/22 22:47:06 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/28 07:20:22 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,4 +104,5 @@ int					ft_nbrstrcmp(const char *s1, const char *s2);
 int					ft_is_str_num(const char *s1);
 void				ft_errorexit(char *error_msg);
 void				ft_handle_error(char *error_msg, int exit_code);
+void            	ft_error(char *error_msg);
 #endif
