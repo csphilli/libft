@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/06 13:17:02 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/01/29 18:14:02 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,8 @@
 char	*ft_strndup(char *str, int size)
 {
 	char	*new;
-	int		i;
 
-	i = 0;
-	if (!(new = ft_strnew(size)))
-		return (NULL);
-	while (str && i < size)
-	{
-		new[i] = str[i];
-		i++;
-	}
-	return (new);
+	new = ft_strnew(sizeof(char*) * size);
+	new[size + 1] = '\0';
+	return ((char*)ft_memcpy(new, str, size));
 }
