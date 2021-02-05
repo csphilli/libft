@@ -6,7 +6,7 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/01/28 07:19:43 by csphilli         ###   ########.fr        #
+#    Updated: 2021/02/05 20:45:07 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,11 @@ SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
 		get_next_line.c ft_error_exit.c ft_handle_error.c
 
-INCLUDES = -I ./includes/
+INC = 	libft.h ll.h colors.h
+INC_DIR = ./includes/
+H_FILES = $(addprefix $(INC_DIR), $(INC))
+
+INCLUDES = -I $(INC_DIR)
 C_FILES = $(addprefix $(SRC_DIR), $(SRC))
 OBJECTS = $(SRC:.c=.o)
 
@@ -42,14 +46,14 @@ TEST_FILE = main.c
 
 all: $(NAME)
 
-$(NAME): $(C_FILES)
+$(NAME): $(C_FILES) $(H_FILES)
 	@if git submodule status | egrep -q '^[-]' ; then \
 		echo "INFO: Initializing git submodules"; \
 		git submodule update --init; \
 	fi
 	@echo "Compiling library..."
 	@mkdir -p $(OBJ_DIR)
-	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
+	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES) 
 	@ar rc $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
 	@mv $(OBJECTS) $(OBJ_DIR)
