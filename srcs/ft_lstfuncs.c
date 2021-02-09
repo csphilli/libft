@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstfuncs.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 22:15:37 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/22 22:48:19 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/02/09 09:22:12 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ll.h"
 
 void	init_list(t_list *list)
 {
