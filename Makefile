@@ -6,15 +6,20 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/01/28 07:19:43 by csphilli         ###   ########.fr        #
+#    Updated: 2021/03/02 09:14:11 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+CC = gcc
 FLAGS = -Wall -Wextra -Werror
-SRC_DIR = ./srcs/
-OBJ_DIR = ./obj
-SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
+SRC_DIR = srcs/
+OBJ_DIR = obj/
+
+INCLUDES = includes/
+INC_FILES = colors.h libft.h ll.h
+
+LIB_FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c\
 		ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c\
 		ft_strstr.c ft_strcmp.c ft_strncmp.c ft_atoi.c ft_isalpha.c\
@@ -34,25 +39,27 @@ SRC = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
 		get_next_line.c ft_error_exit.c ft_handle_error.c
 
-INCLUDES = -I ./includes/
-C_FILES = $(addprefix $(SRC_DIR), $(SRC))
-OBJECTS = $(SRC:.c=.o)
+SRC_FILES = $(addprefix $(SRC_DIR), $(LIB_FILES))
 
-TEST_FILE = main.c
+SRC_CTO = $(LIB_FILES:.c=.o)
+SRC_OBJ = $(addprefix $(OBJ_DIR), $(SRC_CTO))
+
+TARGET_DIR = $(OBJ_DIR)
 
 all: $(NAME)
 
-$(NAME): $(C_FILES)
-	@if git submodule status | egrep -q '^[-]' ; then \
-		echo "INFO: Initializing git submodules"; \
-		git submodule update --init; \
-	fi
-	@echo "Compiling library..."
+$(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
-	@gcc $(FLAGS) $(INCLUDES) -c $(C_FILES)
-	@ar rc $(NAME) $(OBJECTS)
+	@echo "Compiling library...\nStatus: \c"
+
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	@$(CC) $(FLAGS) -I $(INCLUDES) -o $@ -c $<
+	@echo "#\c"
+
+$(NAME): $(OBJ_DIR) $(SRC_FILES) $(INCLUDES) $(SRC_OBJ) 
+	@echo "\nDone!"
+	@ar rc $(NAME) $(SRC_OBJ)
 	@ranlib $(NAME)
-	@mv $(OBJECTS) $(OBJ_DIR)
 
 clean:
 	@rm -rf $(OBJ_DIR)
