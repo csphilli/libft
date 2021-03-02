@@ -6,7 +6,7 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/03/02 09:14:11 by csphilli         ###   ########.fr        #
+#    Updated: 2021/03/02 12:34:03 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@echo "#\c"
 
 $(NAME): $(OBJ_DIR) $(SRC_FILES) $(INCLUDES) $(SRC_OBJ) 
-	@echo "\nDone!"
+	@echo "\nDone!\n"
 	@ar rc $(NAME) $(SRC_OBJ)
 	@ranlib $(NAME)
 
