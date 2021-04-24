@@ -6,7 +6,7 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/03/02 12:34:03 by csphilli         ###   ########.fr        #
+#    Updated: 2021/04/24 17:40:55 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ OBJ_DIR = obj/
 
 INCLUDES = includes/
 INC_FILES = colors.h libft.h ll.h
+INC_SRC = $(addprefix $(INCLUDES), $(INC_FILES))
 
 LIB_FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c\
@@ -52,7 +53,7 @@ $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
 	@echo "Compiling library...\nStatus: \c"
 
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INC_SRC)
 	@$(CC) $(FLAGS) -I $(INCLUDES) -o $@ -c $<
 	@echo "#\c"
 
@@ -68,5 +69,8 @@ fclean: clean
 	@rm -rf $(NAME)
 
 re: fclean all
+
+gnl:
+	$(CC) $(FLAGS) gnl_test.c -L . -lft
 
 .PHONY: all clean fclean re test
