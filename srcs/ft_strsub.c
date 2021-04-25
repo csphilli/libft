@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 12:03:35 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:47:00 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (!(s) || (!(new = ft_strnew(len))))
+	new = ft_strnew(len);
+	if (!s || !new)
 		return (0);
 	while (i < len)
 	{

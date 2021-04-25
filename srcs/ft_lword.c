@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lword.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 11:55:24 by cphillip          #+#    #+#             */
-/*   Updated: 2019/11/06 13:15:44 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 08:59:41 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_lword(const char *s, char c)
+int	ft_lword(const char *s, char c)
 {
 	int	count;
 

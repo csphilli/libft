@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_revstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 15:46:12 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:11:53 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_revstr(char *str)
 
 	i = 0;
 	len = ft_strlen(str);
-	if (!(tmp = (char *)malloc(sizeof(len * (char)+1))))
+	tmp = (char *)malloc(sizeof(len * (char) + 1));
+	if (!tmp)
 		return (NULL);
 	tmp[len] = '\0';
 	while (len--)

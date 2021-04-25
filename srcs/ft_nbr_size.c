@@ -3,23 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_nbr_size.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:34 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:07:37 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_nbr_size(intmax_t nbr)
+int	ft_nbr_size(intmax_t nbr)
 {
-	int len;
+	int	len;
 
 	if (nbr < 0)
 		nbr *= -1;
 	len = 1;
-	while ((nbr /= 10) > 0)
+	while (nbr > 0)
+	{
+		nbr /= 10;
 		len++;
+	}
 	return (len);
 }

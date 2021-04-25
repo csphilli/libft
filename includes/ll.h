@@ -6,28 +6,28 @@
 /*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 21:45:25 by cphillip          #+#    #+#             */
-/*   Updated: 2021/02/05 20:46:06 by csphilli         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:54:32 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LL_H
 # define LL_H
 
-typedef struct		s_node
+typedef struct s_node
 {
 	void			*data;
 	struct s_node	*next;
 }					t_node;
 
-typedef struct		s_list
+typedef struct s_list
 {
 	t_node			*head;
 	t_node			*tail;
 	t_node			*cur;
 }					t_list;
 
-typedef int(*t_compare)(void*, void*);
-typedef	void(*t_display)(void*);
+typedef int	(*t_compare)(void*, void*);
+typedef void(*t_display)(void*);
 
 /*
 **	Initializes the list. The struct is created as such:

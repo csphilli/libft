@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 13:47:26 by cphillip          #+#    #+#             */
-/*   Updated: 2021/01/02 12:47:46 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:00:51 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	*ft_memalloc(size_t size)
 {
 	void	*mem;
 
-	if (!(mem = malloc(size)))
+	mem = malloc(size);
+	if (!mem)
 	{
 		write(2, "ERROR: Failed to allocate memory.\n", 34);
 		exit(0);

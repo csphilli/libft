@@ -6,7 +6,7 @@
 /*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:54:10 by cphillip          #+#    #+#             */
-/*   Updated: 2021/04/24 22:08:29 by csphilli         ###   ########.fr       */
+/*   Updated: 2021/04/24 22:12:59 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *str)
 {
-	char	*s;
+	const char	*s;
 
 	s = str;
 	while (*s)

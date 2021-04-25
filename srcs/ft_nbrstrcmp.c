@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_nbrstrcmp.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 14:20:49 by cphillip          #+#    #+#             */
-/*   Updated: 2020/12/16 13:13:29 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:08:12 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_nbrstrcmp(const char *s1, const char *s2)
+int	ft_nbrstrcmp(const char *s1, const char *s2)
 {
-	int i;
+	int	i;
 	int	n_s1;
 	int	n_s2;
 

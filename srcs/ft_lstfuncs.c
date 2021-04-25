@@ -6,7 +6,7 @@
 /*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/22 22:15:37 by cphillip          #+#    #+#             */
-/*   Updated: 2021/02/09 09:22:12 by csphilli         ###   ########.fr       */
+/*   Updated: 2021/04/25 08:59:29 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	init_list(t_list *list)
 
 void	delete_node(t_list *list, t_node *node)
 {
-	t_node *tmp;
+	t_node	*tmp;
 
 	if (list->head && list->head == node)
 	{
@@ -46,7 +46,7 @@ void	delete_node(t_list *list, t_node *node)
 
 void	*get_node(t_list *list, t_compare compare, void *data)
 {
-	t_node *tmp;
+	t_node	*tmp;
 
 	tmp = list->head;
 	while (tmp)
@@ -60,7 +60,7 @@ void	*get_node(t_list *list, t_compare compare, void *data)
 
 void	display_list(t_list *list, t_display display)
 {
-	t_node *tmp;
+	t_node	*tmp;
 
 	tmp = list->head;
 	while (tmp)

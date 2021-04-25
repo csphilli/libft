@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_nbw.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 10:53:54 by cphillip          #+#    #+#             */
-/*   Updated: 2019/10/29 11:17:12 by cphillip         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:08:26 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_nbw(const char *s, char c)
+int	ft_nbw(const char *s, char c)
 {
 	int	nbr;
 

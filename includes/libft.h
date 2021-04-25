@@ -6,7 +6,7 @@
 /*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:37:29 by cphillip          #+#    #+#             */
-/*   Updated: 2021/02/05 20:34:52 by csphilli         ###   ########.fr       */
+/*   Updated: 2021/04/25 09:49:07 by csphilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 # define BUFF_SIZE 1000
 # define BUFF_SIZE_GNL 1000
-# define FD_SIZE 1000
+# define FD_MAX 1000
 
 # include <string.h>
 # include <stdlib.h>
@@ -87,9 +87,8 @@ int					get_next_line(const int fd, char **line);
 int					clean_line(char **fdt, char **line);
 int					ft_nbr_size_base(uintmax_t nbr, int base);
 char				*ft_revstr(char *str);
-void				*ft_s_inlower(char *str);
-void				*ft_s_inupper(char *str);
 void				ft_s_toupper(char *str);
+void				ft_s_tolower(char *str);
 char				*ft_strndup(char *str, int size);
 int					ft_intlen_max(uintmax_t nbr);
 char				*ft_ftoa(long double nbr, int prec, char dot);
