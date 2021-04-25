@@ -6,7 +6,7 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/04/24 17:40:55 by csphilli         ###   ########.fr        #
+#    Updated: 2021/04/25 09:21:50 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ LIB_FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_nbr_size_base.c ft_revstr.c\
 		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
-		ft_s_inlower.c ft_s_inupper.c ft_s_toupper.c\
+		ft_s_toupper.c ft_s_tolower.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
 		get_next_line.c ft_error_exit.c ft_handle_error.c
 
