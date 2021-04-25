@@ -6,7 +6,7 @@
 #    By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 15:59:38 by cphillip          #+#    #+#              #
-#    Updated: 2021/04/25 09:21:50 by csphilli         ###   ########.fr        #
+#    Updated: 2021/04/25 20:02:04 by csphilli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INCLUDES = includes/
 INC_FILES = colors.h libft.h ll.h
 INC_SRC = $(addprefix $(INCLUDES), $(INC_FILES))
 
-LIB_FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
+LIB_FILES = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c\
 		ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c\
 		ft_strstr.c ft_strcmp.c ft_strncmp.c ft_atoi.c ft_isalpha.c\
@@ -34,7 +34,7 @@ LIB_FILES = 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c\
 		ft_strncpy.c ft_isspace.c ft_strnstr.c \
 		ft_lstadd.c ft_lstfuncs.c ft_error.c\
 		ft_nbr_size_base.c ft_revstr.c\
-		ft_strndup.c ft_intlen_max.c ft_ftoa.c ft_itoa_uintmax.c\
+		ft_strndup.c ft_intlen_max.c ft_itoa_uintmax.c\
 		ft_putnbrmax.c ft_itoa_base.c ft_atoimax.c\
 		ft_s_toupper.c ft_s_tolower.c\
 		ft_free_strsplit.c ft_is_str_nbr.c ft_nbrstrcmp.c\
@@ -69,8 +69,5 @@ fclean: clean
 	@rm -rf $(NAME)
 
 re: fclean all
-
-gnl:
-	$(CC) $(FLAGS) gnl_test.c -L . -lft
 
 .PHONY: all clean fclean re test
