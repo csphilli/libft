@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_nbr_size.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csphilli <csphilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cphillip <cphillip@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:34 by cphillip          #+#    #+#             */
-/*   Updated: 2021/04/25 09:07:37 by csphilli         ###   ########.fr       */
+/*   Updated: 2021/05/03 12:19:13 by cphillip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_nbr_size(intmax_t nbr)
 	if (nbr < 0)
 		nbr *= -1;
 	len = 1;
-	while (nbr > 0)
+	while (nbr >= 10)
 	{
 		nbr /= 10;
 		len++;
